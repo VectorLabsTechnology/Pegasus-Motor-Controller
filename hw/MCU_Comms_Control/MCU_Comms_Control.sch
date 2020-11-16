@@ -1,0 +1,316 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 2
+Title "Circuitos de controle e comunicação"
+Date "2020-11-16"
+Rev "v0.1"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_ST_STM32F3:STM32F303CCTx U?
+U 1 1 5FB1FDE5
+P 5150 2900
+F 0 "U?" H 5400 1350 50  0000 C CNN
+F 1 "STM32F303CCTx" H 5650 1450 50  0000 C CNN
+F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 4550 1500 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00058181.pdf" H 5150 2900 50  0001 C CNN
+	1    5150 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5FB23B78
+P 5100 1200
+F 0 "#PWR?" H 5100 1050 50  0001 C CNN
+F 1 "+3V3" H 5115 1373 50  0000 C CNN
+F 2 "" H 5100 1200 50  0001 C CNN
+F 3 "" H 5100 1200 50  0001 C CNN
+	1    5100 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 1400 5350 1200
+Wire Wire Line
+	5250 1400 5250 1300
+Wire Wire Line
+	5250 1300 5150 1300
+Wire Wire Line
+	5100 1300 5100 1200
+Wire Wire Line
+	5150 1400 5150 1300
+Connection ~ 5150 1300
+Wire Wire Line
+	5150 1300 5100 1300
+Wire Wire Line
+	5050 1400 5050 1300
+Wire Wire Line
+	5050 1300 5100 1300
+Connection ~ 5100 1300
+Wire Wire Line
+	4950 1400 4950 1300
+Wire Wire Line
+	4950 1300 5050 1300
+Connection ~ 5050 1300
+$Comp
+L power:GND #PWR?
+U 1 1 5FB25391
+P 5100 4500
+F 0 "#PWR?" H 5100 4250 50  0001 C CNN
+F 1 "GND" H 5105 4327 50  0000 C CNN
+F 2 "" H 5100 4500 50  0001 C CNN
+F 3 "" H 5100 4500 50  0001 C CNN
+	1    5100 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 4500 5100 4450
+Wire Wire Line
+	5100 4450 5050 4450
+Wire Wire Line
+	4950 4450 4950 4400
+Wire Wire Line
+	5050 4450 5050 4400
+Connection ~ 5050 4450
+Wire Wire Line
+	5050 4450 4950 4450
+Wire Wire Line
+	5150 4450 5150 4400
+Wire Wire Line
+	5150 4450 5100 4450
+Connection ~ 5100 4450
+Wire Wire Line
+	5250 4400 5250 4450
+Wire Wire Line
+	5250 4450 5150 4450
+Connection ~ 5150 4450
+$Comp
+L Connector:DB9_Female J?
+U 1 1 5FB29425
+P 10450 1600
+F 0 "J?" H 10368 908 50  0000 C CNN
+F 1 "CAN BUS" H 10368 999 50  0000 C CNN
+F 2 "" H 10450 1600 50  0001 C CNN
+F 3 " ~" H 10450 1600 50  0001 C CNN
+	1    10450 1600
+	1    0    0    1   
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5FB2B748
+P 9700 1250
+F 0 "#PWR?" H 9700 1100 50  0001 C CNN
+F 1 "+12V" H 9715 1423 50  0000 C CNN
+F 2 "" H 9700 1250 50  0001 C CNN
+F 3 "" H 9700 1250 50  0001 C CNN
+	1    9700 1250
+	-1   0    0    -1  
+$EndComp
+Text GLabel 10150 1800 0    50   Input ~ 0
+CAN_L
+Text GLabel 10150 1700 0    50   Input ~ 0
+CAN_H
+$Comp
+L Jumper:SolderJumper_2_Open JP?
+U 1 1 5FB2CE03
+P 9700 1750
+F 0 "JP?" H 9700 1950 50  0000 C CNN
+F 1 "CAN_GND_TIE" H 9700 1864 50  0000 C CNN
+F 2 "" H 9700 1750 50  0001 C CNN
+F 3 "~" H 9700 1750 50  0001 C CNN
+	1    9700 1750
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	9700 1600 10150 1600
+$Comp
+L power:GND #PWR?
+U 1 1 5FB32268
+P 9700 2000
+F 0 "#PWR?" H 9700 1750 50  0001 C CNN
+F 1 "GND" H 9705 1827 50  0000 C CNN
+F 2 "" H 9700 2000 50  0001 C CNN
+F 3 "" H 9700 2000 50  0001 C CNN
+	1    9700 2000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10150 1900 9700 1900
+Wire Wire Line
+	9700 2000 9700 1900
+Connection ~ 9700 1900
+Text Notes 10200 1600 2    39   ~ 0
+CAN shield ground
+Text Notes 10150 1900 2    39   ~ 0
+Power GND
+Text GLabel 10550 2850 2    50   Input ~ 0
+CAN_H
+Text GLabel 10550 3050 2    50   Input ~ 0
+CAN_L
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5FB45AF4
+P 9650 2600
+F 0 "#PWR?" H 9650 2450 50  0001 C CNN
+F 1 "+3.3V" H 9665 2773 50  0000 C CNN
+F 2 "" H 9650 2600 50  0001 C CNN
+F 3 "" H 9650 2600 50  0001 C CNN
+	1    9650 2600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FB462B2
+P 9650 3300
+F 0 "#PWR?" H 9650 3050 50  0001 C CNN
+F 1 "GND" H 9655 3127 50  0000 C CNN
+F 2 "" H 9650 3300 50  0001 C CNN
+F 3 "" H 9650 3300 50  0001 C CNN
+	1    9650 3300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5FB4B1A9
+P 10250 2950
+F 0 "R?" H 9900 2950 50  0000 L CNN
+F 1 "120" H 10050 2950 50  0000 L CNN
+F 2 "" H 10250 2950 50  0001 C CNN
+F 3 "~" H 10250 2950 50  0001 C CNN
+	1    10250 2950
+	-1   0    0    -1  
+$EndComp
+Text Notes 10700 3200 2    39   ~ 0
+Optional termination
+$Comp
+L Interface_CAN_LIN:SN65HVD232 U?
+U 1 1 5FB58C14
+P 9650 2900
+F 0 "U?" H 9550 2450 50  0000 C CNN
+F 1 "SN65HVD232" H 9350 2550 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 9650 2400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn65hvd230.pdf" H 9550 3300 50  0001 C CNN
+	1    9650 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10100 2850 10100 2900
+Wire Wire Line
+	10100 2900 10050 2900
+Wire Wire Line
+	10250 2850 10100 2850
+Wire Wire Line
+	10050 3000 10100 3000
+Wire Wire Line
+	10100 3000 10100 3050
+Wire Wire Line
+	10250 3050 10100 3050
+Text Notes 10450 2700 2    39   ~ 0
+This footprint lacks\nthe Rs pin.....
+Wire Wire Line
+	10550 3050 10250 3050
+Connection ~ 10250 3050
+Wire Wire Line
+	10550 2850 10250 2850
+Connection ~ 10250 2850
+$Comp
+L power:+3.3VADC #PWR?
+U 1 1 5FBBA6D6
+P 5400 1200
+F 0 "#PWR?" H 5550 1150 50  0001 C CNN
+F 1 "+3.3VADC" H 5415 1373 50  0000 C CNN
+F 2 "" H 5400 1200 50  0001 C CNN
+F 3 "" H 5400 1200 50  0001 C CNN
+	1    5400 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 1200 5350 1200
+$Sheet
+S 900  1050 1650 1100
+U 5FBC07FC
+F0 "Power Supply and Decoupling" 39
+F1 "PwrSD.sch" 39
+$EndSheet
+Wire Wire Line
+	9700 1300 9700 1250
+Wire Wire Line
+	9700 1300 10150 1300
+$Comp
+L Device:Crystal_Small Y?
+U 1 1 5FC055BE
+P 4000 2050
+F 0 "Y?" V 3900 2150 50  0000 L CNN
+F 1 "8MHz" V 4100 2150 50  0000 L CNN
+F 2 "" H 4000 2050 50  0001 C CNN
+F 3 "~" H 4000 2050 50  0001 C CNN
+	1    4000 2050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4000 2150 4100 2150
+Wire Wire Line
+	4100 2150 4100 2100
+Wire Wire Line
+	4100 2000 4100 1950
+Wire Wire Line
+	4100 1950 4000 1950
+$Comp
+L Device:C_Small C?
+U 1 1 5FC0728D
+P 3850 1950
+F 0 "C?" V 3621 1950 50  0000 C CNN
+F 1 "18pF" V 3712 1950 50  0000 C CNN
+F 2 "" H 3850 1950 50  0001 C CNN
+F 3 "~" H 3850 1950 50  0001 C CNN
+	1    3850 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5FC07A43
+P 3850 2150
+F 0 "C?" V 3750 2150 50  0000 C CNN
+F 1 "18pF" V 3650 2150 50  0000 C CNN
+F 2 "" H 3850 2150 50  0001 C CNN
+F 3 "~" H 3850 2150 50  0001 C CNN
+	1    3850 2150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3950 1950 4000 1950
+Connection ~ 4000 1950
+Wire Wire Line
+	4000 2150 3950 2150
+Connection ~ 4000 2150
+$Comp
+L power:GND #PWR?
+U 1 1 5FC09B6D
+P 3700 2050
+F 0 "#PWR?" H 3700 1800 50  0001 C CNN
+F 1 "GND" V 3705 1922 50  0000 R CNN
+F 2 "" H 3700 2050 50  0001 C CNN
+F 3 "" H 3700 2050 50  0001 C CNN
+	1    3700 2050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3750 1950 3700 1950
+Wire Wire Line
+	3700 1950 3700 2050
+Wire Wire Line
+	3750 2150 3700 2150
+Wire Wire Line
+	3700 2150 3700 2050
+Connection ~ 3700 2050
+Wire Wire Line
+	4100 2100 4450 2100
+Wire Wire Line
+	4100 2000 4450 2000
+$EndSCHEMATC
