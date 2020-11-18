@@ -25,17 +25,6 @@ F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 1900 1250 50  0001 C C
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+12V #PWR?
-U 1 1 5FBCFFAA
-P 1300 1450
-F 0 "#PWR?" H 1300 1300 50  0001 C CNN
-F 1 "+12V" H 1315 1623 50  0000 C CNN
-F 2 "" H 1300 1450 50  0001 C CNN
-F 3 "" H 1300 1450 50  0001 C CNN
-	1    1300 1450
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C?
 U 1 1 5FBCFFB0
 P 2200 1650
@@ -329,8 +318,8 @@ F 3 "" H 5050 1350 50  0001 C CNN
 	1    5050 1350
 	1    0    0    -1  
 $EndComp
-Text Notes 1500 1150 0    39   ~ 0
-12V → 3.3V\n(might need better thermals)
+Text Notes 1650 1150 0    50   ~ 0
+5V → 3.3V\n
 Wire Notes Line
 	1100 950  3150 950 
 Wire Notes Line
@@ -378,20 +367,7 @@ F 3 "~" H 6250 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 6500 1200 0    39   ~ 0
-SN65HVD233
-$Comp
-L power:+3.3VADC #PWR?
-U 1 1 5FBF6D85
-P 6250 1350
-AR Path="/5FBF6D85" Ref="#PWR?"  Part="1" 
-AR Path="/5FBC07FC/5FBF6D85" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 6400 1300 50  0001 C CNN
-F 1 "+3.3VADC" H 6265 1523 50  0000 C CNN
-F 2 "" H 6250 1350 50  0001 C CNN
-F 3 "" H 6250 1350 50  0001 C CNN
-	1    6250 1350
-	1    0    0    -1  
-$EndComp
+SN65HVD230
 Wire Notes Line
 	6950 1050 6950 2100
 Wire Notes Line
@@ -404,4 +380,189 @@ Wire Notes Line
 	6950 2100 6050 2100
 Wire Notes Line
 	6050 1050 6950 1050
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5FBC06C2
+P 6250 1350
+F 0 "#PWR?" H 6250 1200 50  0001 C CNN
+F 1 "+3.3V" H 6265 1523 50  0000 C CNN
+F 2 "" H 6250 1350 50  0001 C CNN
+F 3 "" H 6250 1350 50  0001 C CNN
+	1    6250 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FBC1FC7
+P 7250 1850
+F 0 "#PWR?" H 7250 1600 50  0001 C CNN
+F 1 "GND" H 7255 1677 50  0000 C CNN
+F 2 "" H 7250 1850 50  0001 C CNN
+F 3 "" H 7250 1850 50  0001 C CNN
+	1    7250 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FBC1FD1
+P 7250 1600
+F 0 "C?" H 7250 1700 50  0000 L CNN
+F 1 "100nF" H 7250 1500 50  0000 L CNN
+F 2 "" H 7288 1450 50  0001 C CNN
+F 3 "~" H 7250 1600 50  0001 C CNN
+	1    7250 1600
+	1    0    0    -1  
+$EndComp
+Text Notes 7500 1200 0    39   ~ 0
+W25Q128JVS
+Wire Notes Line
+	7950 1050 7950 2100
+Wire Notes Line
+	7050 2100 7050 1050
+Wire Wire Line
+	7250 1350 7250 1450
+Wire Wire Line
+	7250 1750 7250 1850
+Wire Notes Line
+	7950 2100 7050 2100
+Wire Notes Line
+	7050 1050 7950 1050
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5FBC1FE2
+P 7250 1350
+F 0 "#PWR?" H 7250 1200 50  0001 C CNN
+F 1 "+3.3V" H 7265 1523 50  0000 C CNN
+F 2 "" H 7250 1350 50  0001 C CNN
+F 3 "" H 7250 1350 50  0001 C CNN
+	1    7250 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5FBF3FE3
+P 1300 1450
+F 0 "#PWR?" H 1300 1300 50  0001 C CNN
+F 1 "+5V" H 1315 1623 50  0000 C CNN
+F 2 "" H 1300 1450 50  0001 C CNN
+F 3 "" H 1300 1450 50  0001 C CNN
+	1    1300 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:L7805 U?
+U 1 1 5FBF6864
+P 1800 2650
+F 0 "U?" H 1900 2300 50  0000 C CNN
+F 1 "L7805" H 1950 2400 50  0000 C CNN
+F 2 "" H 1825 2500 50  0001 L CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 1800 2600 50  0001 C CNN
+	1    1800 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5FBF78E8
+P 1300 2600
+F 0 "#PWR?" H 1300 2450 50  0001 C CNN
+F 1 "+12V" H 1315 2773 50  0000 C CNN
+F 2 "" H 1300 2600 50  0001 C CNN
+F 3 "" H 1300 2600 50  0001 C CNN
+	1    1300 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FBF7CAC
+P 1300 2800
+F 0 "C?" H 1300 2900 50  0000 L CNN
+F 1 "4.7uF" H 1300 2700 50  0000 L CNN
+F 2 "" H 1338 2650 50  0001 C CNN
+F 3 "~" H 1300 2800 50  0001 C CNN
+	1    1300 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 2650 1300 2650
+Wire Wire Line
+	1300 2650 1300 2600
+Connection ~ 1300 2650
+$Comp
+L Device:C C?
+U 1 1 5FBFB19A
+P 2200 2800
+F 0 "C?" H 2200 2900 50  0000 L CNN
+F 1 "100nF" H 2200 2700 50  0000 L CNN
+F 2 "" H 2238 2650 50  0001 C CNN
+F 3 "~" H 2200 2800 50  0001 C CNN
+	1    2200 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 2650 2100 2650
+$Comp
+L power:GND #PWR?
+U 1 1 5FBFC8C6
+P 1800 3100
+F 0 "#PWR?" H 1800 2850 50  0001 C CNN
+F 1 "GND" H 1805 2927 50  0000 C CNN
+F 2 "" H 1800 3100 50  0001 C CNN
+F 3 "" H 1800 3100 50  0001 C CNN
+	1    1800 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 2950 1800 3050
+Wire Wire Line
+	2200 2950 2200 3050
+Wire Wire Line
+	2200 3050 1800 3050
+Connection ~ 1800 3050
+Wire Wire Line
+	1800 3050 1800 3100
+Wire Wire Line
+	1800 3050 1300 3050
+Wire Wire Line
+	1300 3050 1300 2950
+Text Notes 1950 2550 2    50   ~ 0
+L78M05\nDPAK
+$Comp
+L Diode:1N5819 D?
+U 1 1 5FC007ED
+P 2450 2650
+F 0 "D?" H 2450 2433 50  0000 C CNN
+F 1 "1N5819" H 2450 2524 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 2450 2475 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 2450 2650 50  0001 C CNN
+	1    2450 2650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2300 2650 2200 2650
+Connection ~ 2200 2650
+$Comp
+L power:+5V #PWR?
+U 1 1 5FC02C65
+P 2700 2600
+F 0 "#PWR?" H 2700 2450 50  0001 C CNN
+F 1 "+5V" H 2715 2773 50  0000 C CNN
+F 2 "" H 2700 2600 50  0001 C CNN
+F 3 "" H 2700 2600 50  0001 C CNN
+	1    2700 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 2600 2700 2650
+Wire Wire Line
+	2700 2650 2600 2650
+Wire Notes Line
+	1100 2300 3150 2300
+Wire Notes Line
+	3150 2300 3150 3350
+Wire Notes Line
+	3150 3350 1100 3350
+Wire Notes Line
+	1100 3350 1100 2300
+Text Notes 2950 3200 2    50   ~ 10
+12V -> 5V
 $EndSCHEMATC
