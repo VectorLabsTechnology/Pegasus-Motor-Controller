@@ -757,8 +757,6 @@ Text GLabel 2150 6800 0    50   Input ~ 0
 USB_DP
 Text GLabel 2150 7000 0    50   Input ~ 0
 USB_DM
-NoConn ~ 3150 6800
-NoConn ~ 3150 7000
 Wire Wire Line
 	2650 6400 1800 6400
 Wire Wire Line
@@ -1170,8 +1168,6 @@ Text GLabel 4100 2650 0    50   Input ~ 0
 ENABLE
 Text GLabel 5400 2550 2    50   Input ~ 0
 BUTTON
-Text GLabel 5400 4050 2    50   Input ~ 0
-ERR_OUT
 NoConn ~ 5400 2750
 NoConn ~ 4100 2950
 NoConn ~ 4100 3050
@@ -1212,4 +1208,8 @@ Wire Wire Line
 Wire Wire Line
 	3350 1700 3350 1800
 Connection ~ 3350 1800
+Text GLabel 3150 7000 2    50   Input ~ 0
+USB_DP
+Text GLabel 3150 6800 2    50   Input ~ 0
+USB_DM
 $EndSCHEMATC
