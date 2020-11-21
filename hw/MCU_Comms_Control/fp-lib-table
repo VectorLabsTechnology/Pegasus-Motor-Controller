@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name Custom)(type KiCad)(uri /home/phckopper/Projects/projeto-inversor-pmsm/hw/Footprints)(options "")(descr ""))
+)

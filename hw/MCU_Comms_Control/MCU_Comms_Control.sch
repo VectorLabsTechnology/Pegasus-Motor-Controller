@@ -334,17 +334,6 @@ Connection ~ 4750 5750
 Text Notes 4150 5900 0    39   ~ 0
 We don't care \nabout EMI for now
 $Comp
-L Connector_Generic:Conn_02x13_Top_Bottom J3
-U 1 1 5FB5DC31
-P 1700 4100
-F 0 "J3" H 1750 4917 50  0000 C CNN
-F 1 "TO_POWER_BOARD" H 1750 4826 50  0000 C CNN
-F 2 "Connector_IDC:IDC-Header_2x13_P2.54mm_Vertical" H 1700 4100 50  0001 C CNN
-F 3 "~" H 1700 4100 50  0001 C CNN
-	1    1700 4100
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0112
 U 1 1 5FB76FE3
 P 2000 4700
@@ -1212,4 +1201,15 @@ Text GLabel 3150 7000 2    50   Input ~ 0
 USB_DP
 Text GLabel 3150 6800 2    50   Input ~ 0
 USB_DM
+$Comp
+L Connector_Generic:Conn_02x13_Odd_Even J3
+U 1 1 5FB5DC31
+P 1700 4100
+F 0 "J3" H 1750 4917 50  0000 C CNN
+F 1 "TO_POWER_BOARD" H 1750 4826 50  0000 C CNN
+F 2 "Connector_IDC:IDC-Header_2x13_P2.54mm_Vertical" H 1700 4100 50  0001 C CNN
+F 3 "~" H 1700 4100 50  0001 C CNN
+	1    1700 4100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
