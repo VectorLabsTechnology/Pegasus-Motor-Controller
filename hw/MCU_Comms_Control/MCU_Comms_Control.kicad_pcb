@@ -1,4 +1,4 @@
-(kicad_pcb (version 20171130) (host pcbnew 5.1.6)
+(kicad_pcb (version 20171130) (host pcbnew "(5.1.5)-3")
 
   (general
     (thickness 1.6)
@@ -11,16 +11,16 @@
 
   (page A4)
   (layers
-    (0 F.Cu signal hide)
-    (1 In1.Cu power hide)
-    (2 In2.Cu power hide)
+    (0 F.Cu signal)
+    (1 In1.Cu power)
+    (2 In2.Cu power)
     (31 B.Cu signal)
     (32 B.Adhes user hide)
     (33 F.Adhes user hide)
     (34 B.Paste user hide)
     (35 F.Paste user hide)
     (36 B.SilkS user hide)
-    (37 F.SilkS user hide)
+    (37 F.SilkS user)
     (38 B.Mask user hide)
     (39 F.Mask user hide)
     (40 Dwgs.User user)
@@ -68,7 +68,7 @@
     (pad_drill 0.762)
     (pad_to_mask_clearance 0)
     (aux_axis_origin 0 0)
-    (visible_elements FFFFFF7F)
+    (visible_elements 7FFFFFFF)
     (pcbplotparams
       (layerselection 0x010fc_ffffffff)
       (usegerberextensions false)
@@ -1070,7 +1070,7 @@
     (descr "Mounting Hole 3.2mm, M3")
     (tags "mounting hole 3.2mm m3")
     (attr virtual)
-    (fp_text reference REF** (at 0 -4.2) (layer F.SilkS)
+    (fp_text reference REF** (at 0 -4.2 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value MountingHole_3.2mm_M3_Pad_Via (at 0 4.2) (layer F.Fab)
@@ -1097,7 +1097,7 @@
     (descr "Mounting Hole 3.2mm, M3")
     (tags "mounting hole 3.2mm m3")
     (attr virtual)
-    (fp_text reference REF** (at 0 -4.2) (layer F.SilkS)
+    (fp_text reference REF** (at 0 -4.2) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value MountingHole_3.2mm_M3_Pad_Via (at 0 4.2) (layer F.Fab)
@@ -1124,7 +1124,7 @@
     (descr "Mounting Hole 3.2mm, M3")
     (tags "mounting hole 3.2mm m3")
     (attr virtual)
-    (fp_text reference REF** (at 0 -4.2) (layer F.SilkS)
+    (fp_text reference REF** (at 0 -4.2) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value MountingHole_3.2mm_M3_Pad_Via (at 0 4.2) (layer F.Fab)
@@ -1151,7 +1151,7 @@
     (descr "Mounting Hole 3.2mm, M3")
     (tags "mounting hole 3.2mm m3")
     (attr virtual)
-    (fp_text reference REF** (at 0 -4.2) (layer F.SilkS)
+    (fp_text reference REF** (at 0 -4.2) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value MountingHole_3.2mm_M3_Pad_Via (at 0 4.2) (layer F.Fab)
@@ -2249,7 +2249,7 @@
     (descr "Through hole IDC box header, 2x13, 2.54mm pitch, DIN 41651 / IEC 60603-13, double rows, https://docs.google.com/spreadsheets/d/16SsEcesNF15N3Lb4niX7dcUr-NY5_MFPQhobNuNppn4/edit#gid=0")
     (tags "Through hole vertical IDC box header THT 2x13 2.54mm double row")
     (path /5FB5DC31)
-    (fp_text reference J3 (at 1.27 -6.1) (layer F.SilkS)
+    (fp_text reference J3 (at -2.4765 -6.4135) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value TO_POWER_BOARD (at 1.27 36.58) (layer F.Fab)
@@ -3219,7 +3219,7 @@
     (tags "SMD DIP DIL PDIP SMDIP 2.54mm 7.62mm 300mil")
     (path /5FC4929C)
     (attr smd)
-    (fp_text reference U5 (at 0 -3.6 90) (layer F.SilkS)
+    (fp_text reference U5 (at 0 3.556 90) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value EL817 (at 0 3.6 90) (layer F.Fab)
@@ -3264,7 +3264,7 @@
     (tags "CMS SOT")
     (path /5FBC07FC/5FBCFFA4)
     (attr smd)
-    (fp_text reference U6 (at 0 -4.5) (layer F.SilkS)
+    (fp_text reference U6 (at -5.3975 2.3495 90) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value AMS1117-3.3 (at 0 4.5) (layer F.Fab)
