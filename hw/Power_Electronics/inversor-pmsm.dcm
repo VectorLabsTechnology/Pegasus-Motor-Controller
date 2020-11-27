@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP STDRIVE601
+D Triple half-bridge high-voltage gate driver
+K mosfet-driver
+F https://www.st.com/resource/en/datasheet/stdrive601.pdf
+$ENDCMP
+#
+#End Doc Library
