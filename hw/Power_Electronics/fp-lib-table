@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name inversor-pmsm)(type KiCad)(uri ${KIPRJMOD}/inversor-pmsm.pretty)(options "")(descr ""))
+)

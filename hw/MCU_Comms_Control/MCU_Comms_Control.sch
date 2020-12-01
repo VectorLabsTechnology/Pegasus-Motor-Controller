@@ -377,7 +377,7 @@ F 3 "" H 2000 3500 50  0001 C CNN
 	1    2000 3500
 	0    -1   -1   0   
 $EndComp
-Text GLabel 2000 4300 2    39   Input ~ 0
+Text GLabel 2000 4300 2    30   Input ~ 0
 ~ERROR
 $Comp
 L power:+12V #PWR0116
