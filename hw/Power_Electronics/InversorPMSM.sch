@@ -1417,12 +1417,6 @@ Text GLabel 1550 7100 2    50   Input ~ 0
 ENABLE
 Text GLabel 1550 7200 2    50   Input ~ 0
 VBUS_SCALED
-Text GLabel 1050 6900 0    50   Input ~ 0
-HALL3
-Text GLabel 1050 7000 0    50   Input ~ 0
-HALL2
-Text GLabel 1050 7100 0    50   Input ~ 0
-HALL1
 $Comp
 L power:+5V #PWR03
 U 1 1 60203819
@@ -2224,4 +2218,10 @@ Wire Wire Line
 Wire Wire Line
 	6200 4900 6100 4900
 Connection ~ 6100 4900
+Text GLabel 1050 7100 0    50   Input ~ 0
+HALL1
+Text GLabel 1050 7000 0    50   Input ~ 0
+HALL2
+Text GLabel 1050 6900 0    50   Input ~ 0
+HALL3
 $EndSCHEMATC
