@@ -19,7 +19,7 @@
     (33 F.Adhes user hide)
     (34 B.Paste user hide)
     (35 F.Paste user hide)
-    (36 B.SilkS user hide)
+    (36 B.SilkS user)
     (37 F.SilkS user)
     (38 B.Mask user hide)
     (39 F.Mask user hide)
@@ -234,7 +234,7 @@
   )
 
   (module Custom:pegasus_large (layer B.Cu) (tedit 5FB97D44) (tstamp 5FB9DC9B)
-    (at 90.17 77.47 180)
+    (at 90.17 83.82 180)
     (fp_text reference G*** (at 0 0) (layer B.SilkS) hide
       (effects (font (size 1.524 1.524) (thickness 0.3)) (justify mirror))
     )
@@ -3403,7 +3403,7 @@
     )
   )
 
-  (gr_text "PEGASUS Motor Controller\nv1 11/2020" (at 89.662 58.42) (layer B.SilkS)
+  (gr_text "PEGASUS Motor Controller\nv1 11/2020\n\nPEDRO H. C. KOPPER\nGABRIEL GOSMANN" (at 90.805 62.23) (layer B.SilkS)
     (effects (font (size 2 2) (thickness 0.4)) (justify mirror))
   )
   (dimension 68.834 (width 0.15) (layer Dwgs.User)
