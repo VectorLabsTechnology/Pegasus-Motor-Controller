@@ -14,18 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_ST_STM32F3:STM32F303CCTx U4
-U 1 1 5FB1FDE5
-P 4800 2750
-F 0 "U4" H 5050 1200 50  0000 C CNN
-F 1 "STM32F303CCTx" H 5300 1300 50  0000 C CNN
-F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 4200 1350 50  0001 R CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00058181.pdf" H 4800 2750 50  0001 C CNN
-F 4 "C81523" H 4800 2750 50  0001 C CNN "LCSC"
-	1    4800 2750
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+3V3 #PWR0101
 U 1 1 5FB23B78
 P 4750 1050
@@ -516,9 +504,9 @@ CAN_RX
 Text GLabel 4100 3450 0    50   Input ~ 0
 CAN_TX
 Text GLabel 5400 3750 2    50   Input ~ 0
-USB_DP
+USB_D+
 Text GLabel 5400 3650 2    50   Input ~ 0
-USB_DM
+USB_D-
 $Comp
 L Device:R_Small R7
 U 1 1 5FBA1869
@@ -532,7 +520,7 @@ F 4 "C22843" H 6200 3750 50  0001 C CNN "LCSC"
 	0    1    1    0   
 $EndComp
 Text GLabel 6300 3750 2    50   Input ~ 0
-USB_DP
+USB_D+
 Text GLabel 6100 3750 0    50   Input ~ 0
 SWDIO
 Text Notes 6600 4050 2    39   ~ 0
@@ -543,7 +531,7 @@ U 1 1 5FBAAB5E
 P 900 6800
 F 0 "J1" H 957 7267 50  0000 C CNN
 F 1 "USB_B_Mini" H 957 7176 50  0000 C CNN
-F 2 "Connector_USB:USB_Micro-B_Molex-105017-0001" H 1050 6750 50  0001 C CNN
+F 2 "Connector_USB:USB_Micro-B_Molex-105133-0001" H 1050 6750 50  0001 C CNN
 F 3 "~" H 1050 6750 50  0001 C CNN
 	1    900  6800
 	1    0    0    -1  
@@ -701,8 +689,7 @@ HALL2
 Text GLabel 1500 4200 0    50   Input ~ 0
 HALL3
 NoConn ~ 1500 3700
-NoConn ~ 1500 3800
-Text Notes 1450 3800 2    50   ~ 10
+Text Notes 1450 3750 2    50   ~ 10
 RESERVED
 $Comp
 L Power_Protection:SRV05-4 U1
@@ -739,13 +726,13 @@ F 3 "" H 3050 6350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 1200 6900 2    50   Input ~ 0
-USB_DM
+USB_D-
 Text GLabel 1200 6800 2    50   Input ~ 0
-USB_DP
+USB_D+
 Text GLabel 2150 6800 0    50   Input ~ 0
-USB_DP
+USB_D+
 Text GLabel 2150 7000 0    50   Input ~ 0
-USB_DM
+USB_D-
 Wire Wire Line
 	2650 6400 1800 6400
 Wire Wire Line
@@ -1149,7 +1136,7 @@ Text GLabel 5400 2650 2    50   Input ~ 0
 CURR_V
 Text Notes 5750 2850 0    50   ~ 0
 OPAMP3\n\nOPAMP1
-Text Notes 3400 2600 0    50   ~ 0
+Text Notes 3500 2650 0    50   ~ 0
 OPAMP2\n
 Text GLabel 4100 2750 0    50   Input ~ 0
 VBUS_SCALED
@@ -1157,9 +1144,6 @@ Text GLabel 4100 2650 0    50   Input ~ 0
 ENABLE
 Text GLabel 5400 2550 2    50   Input ~ 0
 BUTTON
-NoConn ~ 5400 2750
-NoConn ~ 4100 2950
-NoConn ~ 4100 3050
 NoConn ~ 1200 7000
 NoConn ~ 5250 7050
 NoConn ~ 5250 7150
@@ -1198,9 +1182,9 @@ Wire Wire Line
 	3350 1700 3350 1800
 Connection ~ 3350 1800
 Text GLabel 3150 7000 2    50   Input ~ 0
-USB_DP
+USB_D+
 Text GLabel 3150 6800 2    50   Input ~ 0
-USB_DM
+USB_D-
 $Comp
 L Connector_Generic:Conn_02x13_Odd_Even J3
 U 1 1 5FB5DC31
@@ -1213,4 +1197,57 @@ F 3 "~" H 1700 4100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 5400 4050
+$Comp
+L MCU_ST_STM32F3:STM32F303CCTx U4
+U 1 1 5FB1FDE5
+P 4800 2750
+F 0 "U4" H 5050 1200 50  0000 C CNN
+F 1 "STM32F303CCTx" H 5300 1300 50  0000 C CNN
+F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 4200 1350 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00058181.pdf" H 4800 2750 50  0001 C CNN
+F 4 "C81523" H 4800 2750 50  0001 C CNN "LCSC"
+	1    4800 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5FD220C9
+P 3400 3250
+F 0 "#PWR01" H 3400 3000 50  0001 C CNN
+F 1 "GND" H 3405 3077 50  0000 C CNN
+F 2 "" H 3400 3250 50  0001 C CNN
+F 3 "" H 3400 3250 50  0001 C CNN
+	1    3400 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male J6
+U 1 1 5FD31C82
+P 3200 3050
+F 0 "J6" H 3308 3331 50  0000 C CNN
+F 1 "TEMP" H 3308 3240 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical" H 3200 3050 50  0001 C CNN
+F 3 "~" H 3200 3050 50  0001 C CNN
+	1    3200 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR02
+U 1 1 5FD36362
+P 3400 3150
+F 0 "#PWR02" H 3400 3000 50  0001 C CNN
+F 1 "+3.3V" V 3415 3278 50  0000 L CNN
+F 2 "" H 3400 3150 50  0001 C CNN
+F 3 "" H 3400 3150 50  0001 C CNN
+	1    3400 3150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3400 3050 4100 3050
+Wire Wire Line
+	4100 2950 3400 2950
+Text GLabel 1500 3800 0    50   Input ~ 0
+NTC_PWR
+Text GLabel 5400 2750 2    50   Input ~ 0
+NTC_PWR
 $EndSCHEMATC
