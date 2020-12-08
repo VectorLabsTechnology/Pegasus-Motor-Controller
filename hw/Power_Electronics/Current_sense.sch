@@ -1083,22 +1083,7 @@ Wire Wire Line
 Connection ~ 6400 2300
 Wire Wire Line
 	6400 2300 6200 2300
-$Comp
-L Connector:TestPoint TP?
-U 1 1 606A739D
-P 7000 1900
-AR Path="/606A739D" Ref="TP?"  Part="1" 
-AR Path="/6016C275/606A739D" Ref="TP40"  Part="1" 
-F 0 "TP40" H 7000 2100 50  0000 C CNN
-F 1 "TestPoint" H 7058 1927 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 7200 1900 50  0001 C CNN
-F 3 "~" H 7200 1900 50  0001 C CNN
-	1    7000 1900
-	1    0    0    -1  
-$EndComp
 Connection ~ 7000 2000
-Wire Wire Line
-	7000 2000 7000 1900
 $Comp
 L Device:R R?
 U 1 1 60723998
