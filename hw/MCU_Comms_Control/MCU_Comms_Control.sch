@@ -510,21 +510,19 @@ USB_D-
 $Comp
 L Device:R_Small R7
 U 1 1 5FBA1869
-P 6200 3750
-F 0 "R7" V 6004 3750 50  0000 C CNN
-F 1 "1k5" V 6095 3750 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 6200 3750 50  0001 C CNN
-F 3 "~" H 6200 3750 50  0001 C CNN
-F 4 "C22843" H 6200 3750 50  0001 C CNN "LCSC"
-	1    6200 3750
+P 5900 4050
+F 0 "R7" V 5704 4050 50  0000 C CNN
+F 1 "1k5" V 5795 4050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5900 4050 50  0001 C CNN
+F 3 "~" H 5900 4050 50  0001 C CNN
+F 4 "C22843" H 5900 4050 50  0001 C CNN "LCSC"
+	1    5900 4050
 	0    1    1    0   
 $EndComp
-Text GLabel 6300 3750 2    50   Input ~ 0
+Text GLabel 6000 4050 2    50   Input ~ 0
 USB_D+
-Text GLabel 6100 3750 0    50   Input ~ 0
-SWDIO
-Text Notes 6600 4050 2    39   ~ 0
-Pull-up resistor for\nfull-speed identification\nTied to SWDIO for\neasier routing
+Text Notes 6300 4350 2    39   ~ 0
+Pull-up resistor for\nfull-speed identification
 $Comp
 L Connector:USB_B_Mini J1
 U 1 1 5FBAAB5E
@@ -1196,7 +1194,6 @@ F 3 "~" H 1700 4100 50  0001 C CNN
 	1    1700 4100
 	1    0    0    -1  
 $EndComp
-NoConn ~ 5400 4050
 $Comp
 L MCU_ST_STM32F3:STM32F303CCTx U4
 U 1 1 5FB1FDE5
@@ -1250,4 +1247,6 @@ Text GLabel 1500 3800 0    50   Input ~ 0
 NTC_PWR
 Text GLabel 5400 2750 2    50   Input ~ 0
 NTC_PWR
+Wire Wire Line
+	5800 4050 5400 4050
 $EndSCHEMATC
