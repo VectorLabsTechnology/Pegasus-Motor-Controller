@@ -5,13 +5,13 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 2
 Title "Circuitos de controle e comunicação"
-Date "2020-11-18"
-Rev "v0.1"
+Date "2020-12-14"
+Rev "v1.0"
 Comp ""
 Comment1 "Pedro Henrique Kopper"
-Comment2 ""
+Comment2 "Gabriel Gosmann"
 Comment3 ""
-Comment4 ""
+Comment4 "Distribuído sob a licença CERN-OHL-S"
 $EndDescr
 $Comp
 L power:+3V3 #PWR0101
