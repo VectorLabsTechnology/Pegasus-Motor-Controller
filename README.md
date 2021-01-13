@@ -1,10 +1,8 @@
-# Projeto de um inversor para um PMSM utilizando FOC
-
-_Sugestões de nomes melhores são aceitas_
+# Pegasus Motor Controller
 
 ## Objetivo
 
-O objetivo do projeto é desenvolver um inversor para um motor síncrono de ímãs permanentes utilizando a técnica de controle orientado a campo. Com isso, se espera obter a familiaridadee com tecnologias modernas de controle de motores, tendo como objetivo final desenvolver um inversor capaz de acionar o motor fabricado _in-house_ pela UFRGS em conjunto com a e-Power.
+O objetivo do projeto é desenvolver um inversor para um motor síncrono de ímãs permanentes utilizando a técnica de controle orientado a campo. Com isso, se espera obter a familiaridadee com tecnologias modernas de controle de motores, tendo como objetivo final desenvolver um inversor capaz de acionar motores trifásicos e BLDC.
 
 ## Especificações
 
