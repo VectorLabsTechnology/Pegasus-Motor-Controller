@@ -445,22 +445,8 @@ F 4 "C23162" H 5550 1100 50  0001 C CNN "LCSC"
 	1    5550 1100
 	1    0    0    1   
 $EndComp
-$Comp
-L Device:R_Small R1
-U 1 1 5FB977A0
-P 5300 1100
-F 0 "R1" H 5241 1054 50  0000 R CNN
-F 1 "4k7" H 5241 1145 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 5300 1100 50  0001 C CNN
-F 3 "~" H 5300 1100 50  0001 C CNN
-F 4 "C23162" H 5300 1100 50  0001 C CNN "LCSC"
-	1    5300 1100
-	1    0    0    1   
-$EndComp
 Wire Wire Line
-	5600 1450 5300 1450
-Wire Wire Line
-	5300 1450 5300 1200
+	5600 1450 5500 1450
 Wire Wire Line
 	5600 1250 5550 1250
 Wire Wire Line
@@ -469,8 +455,6 @@ Wire Wire Line
 	5550 1000 5550 950 
 Wire Wire Line
 	5550 950  5450 950 
-Wire Wire Line
-	5300 950  5300 1000
 $Comp
 L power:+3V3 #PWR0120
 U 1 1 5FB9A9B8
@@ -484,9 +468,6 @@ F 3 "" H 5450 850 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5450 850  5450 950 
-Connection ~ 5450 950 
-Wire Wire Line
-	5450 950  5300 950 
 Text GLabel 5550 1250 0    39   Input ~ 0
 ~RESET
 Text GLabel 7000 2550 2    50   Input ~ 0
@@ -1105,14 +1086,7 @@ F 3 "" H 3750 2450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3750 2450 3700 2450
-Wire Wire Line
-	3700 2450 3700 2100
-Wire Wire Line
 	3700 2100 3650 2100
-Connection ~ 3700 2450
-Wire Wire Line
-	3700 2450 3650 2450
 Text GLabel 7000 2950 2    50   Input ~ 0
 CURR_U
 Text GLabel 7000 1550 2    50   Input ~ 0
@@ -1355,4 +1329,45 @@ Wire Wire Line
 	8050 5600 8050 5550
 Wire Wire Line
 	8050 5200 8050 5350
+$Comp
+L Device:R_Small R1
+U 1 1 5FB977A0
+P 5500 1550
+F 0 "R1" H 5441 1504 50  0000 R CNN
+F 1 "4k7" H 5441 1595 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5500 1550 50  0001 C CNN
+F 3 "~" H 5500 1550 50  0001 C CNN
+F 4 "C23162" H 5500 1550 50  0001 C CNN "LCSC"
+	1    5500 1550
+	1    0    0    1   
+$EndComp
+Connection ~ 5500 1450
+Wire Wire Line
+	5500 1450 5300 1450
+$Comp
+L power:GND #PWR?
+U 1 1 6001C778
+P 5500 1650
+F 0 "#PWR?" H 5500 1400 50  0001 C CNN
+F 1 "GND" H 5505 1477 50  0000 C CNN
+F 2 "" H 5500 1650 50  0001 C CNN
+F 3 "" H 5500 1650 50  0001 C CNN
+	1    5500 1650
+	1    0    0    -1  
+$EndComp
+Text Notes 4600 1700 0    50   ~ 10
+Changed from\npull-up to pull-down\n
+Wire Wire Line
+	3650 2450 3750 2450
+$Comp
+L power:+3V3 #PWR?
+U 1 1 60024A22
+P 3700 2100
+F 0 "#PWR?" H 3700 1950 50  0001 C CNN
+F 1 "+3V3" V 3715 2228 50  0000 L CNN
+F 2 "" H 3700 2100 50  0001 C CNN
+F 3 "" H 3700 2100 50  0001 C CNN
+	1    3700 2100
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
