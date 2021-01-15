@@ -1370,4 +1370,6 @@ F 3 "" H 3700 2100 50  0001 C CNN
 	1    3700 2100
 	0    1    1    0   
 $EndComp
+Text Notes 5300 2750 1    50   ~ 10
+FIXME\nWRONG FOOTPRINT
 $EndSCHEMATC

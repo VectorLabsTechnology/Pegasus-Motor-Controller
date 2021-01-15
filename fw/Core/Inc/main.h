@@ -98,8 +98,6 @@ void Error_Handler(void);
 #define V_L_GPIO_Port GPIOB
 #define W_L_Pin GPIO_PIN_15
 #define W_L_GPIO_Port GPIOB
-#define U_H_Pin GPIO_PIN_8
-#define U_H_GPIO_Port GPIOA
 #define V_H_Pin GPIO_PIN_9
 #define V_H_GPIO_Port GPIOA
 #define W_H_Pin GPIO_PIN_10
