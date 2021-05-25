@@ -505,7 +505,7 @@ USB_D+
 Text Notes 8350 2650 2    39   ~ 0
 Pull-up resistor for\nfull-speed identification
 $Comp
-L Connector:USB_B_Mini J1
+L MCU_Comms_Control-rescue:USB_B_Mini-Connector J1
 U 1 1 5FBAAB5E
 P 900 6800
 F 0 "J1" H 957 7267 50  0000 C CNN
