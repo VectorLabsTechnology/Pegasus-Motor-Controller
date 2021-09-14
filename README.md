@@ -13,6 +13,16 @@ Em primeira instância, o motor a ser acionado será um motor oriundo de um _hov
 O repositório está dividido em quatro subdiretórios, `docs`, `fw`, `hw` e `sw`, que contêm respectivamente a documentação, firmware, hardware e software do projeto.
 A parte de documentação é organizada majoritariamente no formato de [CTs](/docs/README.md). O design de hardware está sendo realizado com a ferramenta KiCad.
 
+## Renders of the borads
+Power Electronics:
+![Power Electronics 1](https://github.com/VectorLabsTechnology/Pegasus-Motor-Controller/blob/main/hw/Power_Electronics/Renders/power_electronics_front.png)
+
+Control Board:
+![Control](https://github.com/VectorLabsTechnology/Pegasus-Motor-Controller/blob/main/hw/MCU_Comms_Control/Renders/MCU_Comms_Control_front.png)
+
+Video of the test on a 3-phase induction motor
+[![Watch the video](https://github.com/VectorLabsTechnology/Pegasus-Motor-Controller/blob/main/hw/Power_Electronics/Renders/testing_setup.jpg)](https://www.youtube.com/watch?v=kWv3p37wL9I&t=134s)
+
 ### Licença
 
 O projeto está licenciado sob a licença MIT. Isso quer dizer que você tem o direto de reproduzir ele, tanto o software quanto o hardware.
