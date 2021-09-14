@@ -1165,17 +1165,6 @@ F 3 "" H 4900 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x04_Male J6
-U 1 1 5FD31C82
-P 4700 3350
-F 0 "J6" H 4808 3631 50  0000 C CNN
-F 1 "TEMP" H 4808 3540 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical" H 4700 3350 50  0001 C CNN
-F 3 "~" H 4700 3350 50  0001 C CNN
-	1    4700 3350
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+3.3V #PWR02
 U 1 1 5FD36362
 P 4900 3450
@@ -1307,8 +1296,6 @@ F 3 "" H 8050 5000 50  0001 C CNN
 	1    8050 5000
 	1    0    0    -1  
 $EndComp
-Text GLabel 5600 3450 0    50   Input ~ 0
-ERR_IN
 Wire Wire Line
 	4900 3350 5600 3350
 Wire Wire Line
@@ -1372,4 +1359,17 @@ F 3 "" H 3700 2100 50  0001 C CNN
 $EndComp
 Text Notes 5300 2750 1    50   ~ 10
 FIXME\nWRONG FOOTPRINT
+$Comp
+L Connector:Conn_01x04_Male J6
+U 1 1 5FD31C82
+P 4700 3350
+F 0 "J6" H 4808 3631 50  0000 C CNN
+F 1 "TEMP" H 4808 3540 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical" H 4700 3350 50  0001 C CNN
+F 3 "~" H 4700 3350 50  0001 C CNN
+	1    4700 3350
+	1    0    0    -1  
+$EndComp
+Text GLabel 5600 3450 0    50   Input ~ 0
+ERR_IN
 $EndSCHEMATC
